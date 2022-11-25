@@ -1,0 +1,85 @@
+import { StyleSheet } from "react-native";
+
+export const stylesModalItem= StyleSheet.create({
+    listContainer: {
+        marginHorizontal: 20,
+    },
+    modalContainer: {
+        flex: 1,
+        backgroundColor: "#242E41",
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 20,
+    },
+    modalTitle: {
+        fontFamily: "Lato-Regular",
+        color: "#f5487f",
+        fontSize: 48,
+        fontWeight: 'bold',
+        marginBottom: 60,
+    },
+    modalDetailContainer: {
+        paddingVertical: 20,
+    },
+    modalDetailText: {
+        fontFamily: "Lato-Regular",
+        padding: 50,
+        textAlign: "center",
+        alignSelf: 'center',
+        color: "#FDCEA8",
+        fontSize: 22,
+    },
+    selectedTask: {
+        fontFamily: "Lato-Regular",
+        alignSelf: 'center',
+        fontSize: 24,
+        color: "#FDCEA8",
+        fontWeight: "normal",
+        paddingVertical: 20,
+    },
+    modalButtonContainer: {
+        grid: 2,
+        marginTop: 50,
+        alignSelf: "center",
+        width: "70%",
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+    },
+    modalPrevText: {
+        fontFamily: "Lato-Regular",
+        textAlignVertical: 30,
+        alignSelf: "center",
+        color: "#FFF",
+        fontSize: 24,
+    },
+    buttonWarning: {
+        justifyContent: "space-between",
+        alignItems: "center",
+        alignSelf: "center",
+        width: 60,
+        height: 60,
+    },
+    buttonModal: {
+        justifyContent: "space-between",
+        alignItems: "center",
+        alignSelf: "center",
+        width: 20,
+        height: 20,
+    },
+    listModalContainer: {
+        backgroundColor: "#242E41",
+        borderRadius: 10,
+        paddingVertical: 20,
+        paddingHorizontal: 10,
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowColor: "#FDCEA8",
+        shadowOpacity: 0.15,
+        shadowRadius: 3.84,
+        elevation: 5,
+        justifyContent: "center",
+        marginVertical: 5,
+    },
+});
