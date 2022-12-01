@@ -13,7 +13,7 @@ export const stylesInput = StyleSheet.create({
         color: "#EFD6AC",
         fontFamily: "Lato-Regular",
         fontSize: 20,
-        width: "75%",
+        width: "70%",
         borderWidth: 2,
         borderRadius: 10,
         borderColor: "#8f3b76",

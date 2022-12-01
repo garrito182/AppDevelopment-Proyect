@@ -20,7 +20,6 @@ export const stylesTaskItem = StyleSheet.create({
         justifyContent: "space-between",
         marginHorizontal: 20,
         marginVertical: 7,
-        
     },
     listItem: {
         fontFamily: "Lato-Regular",

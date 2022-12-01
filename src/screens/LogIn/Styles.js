@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
 
-export const stylesIndex = StyleSheet.create({
+export const stylesLogIn = StyleSheet.create({
     container: {
         justifyContent: 'center',
         alignItems: 'center',
         marginVertical: 80,
         backgroundColor: "#242E41",
-        paddingVertical: 160,
+        paddingVertical: 100,
         borderRadius: 30,
     },
     containerMain: {
@@ -15,12 +15,63 @@ export const stylesIndex = StyleSheet.create({
     },
     tinyLogo: {
         justifyContent: "center",
-        right: 0,
-        top: 35,
         alignContentAlign: "center",
         width: 250,
         height: 150,
         marginTop: 20,
         marginBottom: 50,
+    },
+    inputContainer: {
+        fontFamily: "Lato-Regular",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        marginTop: 50,
+        marginHorizontal: 30,
+        marginVertical: 140,
+    },
+    input: {
+        color: "#EFD6AC",
+        fontFamily: "Lato-Bold",
+        fontSize: 20,
+        minWidth: 300,
+        maxWidth: 300,
+        marginVertical: 10,
+        position: "relative",
+        paddingVertical: 15,
+        paddingHorizontal: 20,
+        borderWidth: 2,
+        borderRadius: 10,
+        borderColor: "#8f3b76",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowColor: "#FDCEA8",
+        shadowOpacity: 0.07,
+        shadowRadius: 4,
+        elevation: 5
+    },
+    buttonLogIn: {
+        justifyContent: "center",
+        alignContent: "center",
+        alignItems: "center",
+        marginHorizontal: 80,
+        marginVertical: 30,
+        color: "#EFD6AC",
+        fontFamily: "Lato-Bold",
+        fontSize: 36,
+        borderWidth: 2,
+        borderRadius: 10,
+        borderColor: "#EFD6AC",
+        paddingVertical: 10,
+        paddingHorizontal: 10,
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowColor: "#8f3b76",
+        shadowOpacity: 0.4,
+        shadowRadius: 4,
+        elevation: 5
     },
 });

@@ -24,7 +24,8 @@ function MyStack() {
             <Stack.Screen
                 name="TaskViewScreen"
                 component={TaskViewScreen}
-                options={{ headerShown: false }}/>
+                options={{ headerShown: false }}
+            />
         </Stack.Navigator>
     )
 }
@@ -33,15 +34,40 @@ function MyTabs() {
     return (
         <Tab.Navigator
             initialRouteName="Home"
-            style={{backgroundColor: '#e91e63'}}
-            screenOptions={{headerShown: false,}}>
+            screenOptions={({ }) => ({
+                headerShown: false,
+                tabBarStyle: {
+                    height: 70,
+                    paddingHorizontal: 2,
+                    paddingTop: 5,
+                    paddingBottom: 0,
+                    backgroundColor: '#242E41',
+                    position: 'absolute',
+                    borderTopWidth: 4,
+                    borderTopColor: '#8f3b76',
+                },
+            })}>
             <Tab.Screen
                 name="Home"
                 component={MyStack}
                 options={{
                     tabBarLabel: "",
-                    tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons name="home-assistant" size={36} color="#EFD6AC" />
+                    tabBarIcon: ({ }) => (
+                        <MaterialCommunityIcons
+                            name="home-assistant"
+                            size={36}
+                            color="#8f3b76"
+                            borderTopColor="EFD6AC"
+                            style={{
+                                shadowOffset: {
+                                    width: 0,
+                                    height: 2,
+                                },
+                                shadowColor: "#FDCEA8",
+                                shadowOpacity: 0.15,
+                                shadowRadius: 4,
+                                elevation: 5
+                            }} />
                     )
                 }} />
             <Tab.Screen
@@ -49,11 +75,24 @@ function MyTabs() {
                 component={LogIn}
                 options={{
                     tabBarLabel: "",
-                    tabBarIcon: ({ color, size }) => (
-                        <Foundation name="torso" size={36} color="#EFD6AC" />
+                    tabBarIcon: ({ }) => (
+                        <Foundation
+                            name="torso"
+                            size={36}
+                            color="#8f3b76"
+                            style={{
+                                shadowOffset: {
+                                    width: 0,
+                                    height: 2,
+                                },
+                                shadowColor: "#FDCEA8",
+                                shadowOpacity: 0.1,
+                                shadowRadius: 2,
+                                elevation: 5
+                            }} />
                     )
                 }} />
-        </Tab.Navigator>
+        </ Tab.Navigator>
     );
 };
 
